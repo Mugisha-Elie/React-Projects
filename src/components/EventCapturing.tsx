@@ -1,7 +1,11 @@
+import { useState } from 'react'
 import CustomButton from "./CustomButton"
 
 export default function EventCapturing(){
+    const [count, setCount] = useState(0)
+
     const exercises = Array.from({length: 9}, (_, i) => i)
+    
     return (
         <div
         className="flex flex-col items-center gap-5"
@@ -27,12 +31,24 @@ export default function EventCapturing(){
             </button> */}
 
 
-            <div 
+            {/* <div 
             className="flex gap-5"
             >
                 <CustomButton num={1}>Button</CustomButton>
                 <CustomButton num={2}>Button</CustomButton>
                 <CustomButton num={3}>Button</CustomButton>
+            </div> */}
+
+            <div 
+            className='text-center my-3 space-y-3'
+            >
+                <p>Button has been clicked: {count} times</p>
+                <button
+                onClick={() => setCount(count => count + 1)}
+                className="px-1 border bg-gray-100 hover:cursor-pointer"
+                >
+                    Click Me
+                </button>
             </div>
         </div>
     )
