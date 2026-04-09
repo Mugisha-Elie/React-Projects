@@ -29,6 +29,7 @@ export default function EventCapturing(){
             >
                 Click Me
             </button> */}
+            
 
 
             {/* <div 
@@ -39,7 +40,10 @@ export default function EventCapturing(){
                 <CustomButton num={3}>Button</CustomButton>
             </div> */}
 
-            <div 
+
+
+
+            {/* <div 
             className='text-center my-3 space-y-3'
             >
                 <p>Button has been clicked: {count} times</p>
@@ -49,7 +53,7 @@ export default function EventCapturing(){
                 >
                     Click Me
                 </button>
-            </div>
+            </div> */}
         </div>
     )
 }
